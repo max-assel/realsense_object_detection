@@ -1,0 +1,8 @@
+<launch>
+
+    <include file="$(find realsense2_camera)/launch/rs_camera.launch" />
+
+    <node pkg="realsense_object_detection" type="RealsenseObjectDetectorNode.py" name="realsense_object_detection"
+        output="screen" />
+
+</launch>
